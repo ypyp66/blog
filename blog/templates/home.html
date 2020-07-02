@@ -1,0 +1,7 @@
+<a href="/admin">어드민</a>
+{%for blog in blogs.all%} <!--모든 blogs객체가 다 담김-->
+    <h1>{{blog.title}}</h1>
+    <p>{{blog.pub_date}}</p>
+    <p>{{blog.body}}</p>
+    ================
+{%endfor%}
